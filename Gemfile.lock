@@ -5,6 +5,7 @@ GEM
     diff-lcs (1.4.4)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
+    dotenv (2.7.6)
     http-accept (1.7.0)
     http-cookie (1.0.4)
       domain_name (~> 0.5)
@@ -57,6 +58,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  dotenv
   rack-test
   rest-client
   rexml
