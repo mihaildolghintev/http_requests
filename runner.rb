@@ -15,4 +15,4 @@ Spotify.reorder_track_position(playlist.id, items.first.id, items.count)
 Spotify.remove_track(playlist.id, "spotify:track:#{items.first.id}")
 playlist = Spotify.playlist(playlist.id)
 puts playlist.to_json
-# Manager.unfollow_playlist(playlist.id)
+Manager.unfollow_playlist(playlist.id)
