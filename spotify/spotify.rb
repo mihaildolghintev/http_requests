@@ -46,7 +46,7 @@ module Spotify
     def playlists_items(playlist_id)
       items = Spotify::API::Playlists.playlist_items(@token, playlist_id)
 
-      items[:items].map { |item| Track.new item }
+      items[:items].map { |item| Track.from_json item }
     end
 
     def add_tracks_to_playlist(playlist_id, track_urls)
